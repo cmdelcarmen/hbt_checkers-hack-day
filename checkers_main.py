@@ -29,10 +29,11 @@ print("Your API key can be found at: https://intranet.hbtn.io/dashboards/my_tool
 api_key = input("Please enter your API key: ")
 email = input("Please enter your email: ")
 password = input("Please enter your password for the intranet: ")
-project_id = input("Enter project id: ")
-print()
 
 auth_token = get_auth_token(api_key, email, password)
+
+project_id = input("Enter project id: ")
+print()
 tasks_dictionary = get_tasks(auth_token, project_id)
 
 while (1):
