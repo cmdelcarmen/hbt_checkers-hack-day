@@ -25,8 +25,8 @@
 - In my program, the first thing users do is enter their intranet log-in information. An "auth_token" is then created that is used in every request.  
 
 ### How to use:
-```$ git clone https://github.com/cmdelcarmen/hbt_checkers.git```  
-```$ cd hbt_checkers```  
+```$ git clone https://github.com/cmdelcarmen/hbt_checkers-hack-day.git```  
+```$ cd hbt_checkers-hack-day```  
 ```$ ./checkers_main.py```  
 
 *Note*: I **highly** recommend opening up the `checkers_auth_token.py` file and "hard coding" your credentials in. Then opening up the `checkers_main.py` file and either commenting out or removing the statements asking for the user's credentials. That way when you run the program, it only needs the **project ID** and **task number**.
