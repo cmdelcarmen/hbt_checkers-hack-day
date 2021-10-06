@@ -23,7 +23,7 @@ def get_correction(auth_token="", task_id=""):
     checks = json.loads(response.content.decode('utf-8'))['result_display']['checks']
 
     for check in checks:
-        print(check['title'], end=" ")
+        print(check['title'], check['check_label'], end=" ")
 
         if check['passed']:
             print("passed.")
