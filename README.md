@@ -31,7 +31,7 @@
 
 *Note*: I **highly** recommend opening up the `checkers_auth_token.py` file and "hard coding" your credentials in. Then opening up the `checkers_main.py` file and either commenting out or removing the statements asking for the user's credentials. That way when you run the program, it only needs the **project ID** and **task number**.
 
-The **project ID** can be found at the end of the project's URL. For example, the URL "https://intranet.hbtn.io/projects/434" for this project indicates **that the project ID** is: 434.
+The **project ID** can be found at the end of the project's URL. For example, the URL "https://intranet.hbtn.io/projects/434" for this project indicates **that the project ID is: 434.**
 
 ### File descriptions:
 - checkers_main.py  
@@ -39,7 +39,7 @@ The **project ID** can be found at the end of the project's URL. For example, th
 - checkers_get_auth_token.py
     - File contanins method `get_auth_token()` which uses the student's login credentials to return a temporary access token to the intranet's API. 
 - checkers_tasks.py
-    - File contains method `get_tasks()` which uses the access token and the project ID entered by the user to return a dictionary of all the project's tasks. For example: `{1: task_id}`, 1 is the number of the task, task_id is the is given to the task by Holberton.
+    - File contains method `get_tasks()` which uses the access token and the project ID entered by the user to return a dictionary of all the project's tasks. For example: `{1: task_id}`, 1 is the number of the task, task_id is the id given to the task by Holberton.
 - checkers_filename.py
     - File contains method `get_filename()` which uses the access token and task_id (aquired by the user choosing which task number) to return the name of the file that is being checked, so that the student can see the name of the file being checked.
 - checkers_correction.py
