@@ -6,7 +6,7 @@
 <h3>Holberton School's: Hack day: Checker challenge</h3>
 <ul>
     <li>Command-line checkers for Holberton students.</li>
-    <li>Program connests to Holberton's intranet's API.</li>
+    <li>Program connects to Holberton's intranet's API.</li>
     <li>It collects student/project data via the command line and runs desired code checker.</li>
 </ul>
 <img width="1000" height="0">
