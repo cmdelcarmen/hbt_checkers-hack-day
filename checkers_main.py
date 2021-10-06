@@ -37,9 +37,12 @@ print()
 tasks_dictionary = get_tasks(auth_token, project_id)
 
 while (1):
-    task_number = input("Please enter the task number or exit: ")
+    task_number = input("Please enter a valid task number or exit: ")
     if task_number == "exit":
         sys.exit()
+
+    if int(task_number) not in tasks_dictionary:
+        continue
 
     task_id = tasks_dictionary[int(task_number)]
 
