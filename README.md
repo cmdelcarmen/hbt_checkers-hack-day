@@ -16,7 +16,7 @@
 </p>
 
 ### Requirements:
-- Free to build what we want, it just needs to be related to Holberton and the Checker.  
+- Free to build what we want, it just needs to be related to Holberton and the intranet's code checker.  
 - 24 hour time frame.  
 
 ### The Intranet's API
