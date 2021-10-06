@@ -22,7 +22,7 @@
 ### The Intranet's API
 - All endpoints are accessible only with authentication.  
 - The authentication on the API is done by requesting an "auth_token" and using it in every request.  
-- In my program, the first things users do is enter their intranet log-in information. An "auth_token" is then created that is used in every request.  
+- In my program, the first thing users do is enter their intranet log-in information. An "auth_token" is then created that is used in every request.  
 
 ### How to use:
 ```$ git clone https://github.com/cmdelcarmen/hbt_checkers.git```  
