@@ -20,7 +20,7 @@ print("Welcome to the command line checkers!")
 print("_____________________________________\n")
 print("Your project number can be found at the end of the project URL.")
 print("For exmaple, for URL https://intranet.hbtn.io/projects/434, the project number will be 434.")
-print("Please make sure to push all you code to github before running the checkers.")
+print("Please make sure to push all your code to github before running the checkers.")
 print("Your API key can be found at: https://intranet.hbtn.io/dashboards/my_tools.\n")
 
 
