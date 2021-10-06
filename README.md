@@ -9,8 +9,26 @@
     <li>Program connests to Holberton's intranet's API.</li>
     <li>It collects student/project data via the command line and runs desired code checker.</li>
 </ul>
-<img width="1000" height=0">
+<img width="1000" height="0">
 </td>
 </tr>
 </table>
 </p>
+
+### Requirements:
+- Free to build what we want, it just needs to be related to Holberton and the Checker.  
+- 24 hour time frame.  
+
+### The Intranet's API
+- All endpoints are accessible only with authentication.  
+- The authentication on the API is done by requesting an "auth_token" and using it in every request.  
+- In my program, the first things users do is enter their intranet log-in information. An "auth_token" is then created that is used in every request.  
+
+### How to use:
+```$ git clone https://github.com/cmdelcarmen/hbt_checkers.git```  
+```$ cd hbt_checkers```  
+```$ ./checkers_main.py```  
+
+*Note*: I **highly** recommend opening up the `checkers_auth_token.py` file and "hard coding" your credentials in. Then opening up the `checkers_main.py` file and either commenting out or removing the statements asking for the user's credentials. That way when you run the program, it only needs the **project ID** and **task number**.
+
+The **project ID** can be found at the end of the project's URL. For example, the URL "https://intranet.hbtn.io/projects/434" for this project indicates **that the project ID** is: 434.
