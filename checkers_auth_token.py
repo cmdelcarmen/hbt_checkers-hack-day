@@ -21,7 +21,7 @@ def get_auth_token(api_key="", email="", password=""):
     response = requests.post(URL, headers=headers, data=student_data)
 
     if response.status_code == 401:
-        print("The wrong API key was entered.")
+        print("\nThe wrong student information was entered.")
         sys.exit()
 
     auth_token = json.loads(response.content.decode('utf-8'))['auth_token']
