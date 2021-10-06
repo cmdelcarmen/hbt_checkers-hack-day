@@ -25,7 +25,10 @@ def get_tasks(auth_token="", project_id=""):
     tasks_dict = {}
 
     for task in tasks:
-        tasks_dict[count] = task['id']
+        if task['checker_available']:
+            print(task)
+
+            tasks_dict[count] = task['id']
         count = count + 1
 
     return tasks_dict
