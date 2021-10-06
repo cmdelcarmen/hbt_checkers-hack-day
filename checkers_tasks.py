@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import json
+import sys
 import requests
 from flask import Flask
 
@@ -12,7 +13,13 @@ def get_tasks(auth_token="", project_id=""):
     """
     headers = {"Content-Type": "application/json"}
     URL = "https://intranet.hbtn.io/projects/{}.json?auth_token={}".format(project_id, auth_token)
-    tasks = requests.get(URL, headers=headers).json()['tasks']
+    response = requests.get(URL, headers=headers)
+
+    if response.status_code == 404:
+        print("The project number that was entered does not exist.")
+        sys.exit()
+
+    tasks = response.json()['tasks']
 
     count = 0
     tasks_dict = {}
