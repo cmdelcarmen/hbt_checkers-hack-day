@@ -3,7 +3,6 @@
 import json
 import sys
 import requests
-from flask import Flask
 
 
 def get_tasks(auth_token="", project_id=""):
